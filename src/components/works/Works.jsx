@@ -97,7 +97,7 @@ function Works() {
             </CardContent>
           </CardActionArea>
         </Card>
-        {/* KOkon.live */}
+        {/* KOkon.app */}
         <Card
           className="card"
           variant="elevation"
@@ -121,7 +121,7 @@ function Works() {
                 component="div"
                 paddingTop={1}
               >
-                KOkon.live
+                KOkon.app
               </Typography>
               <hr />
               <Typography

@@ -7,7 +7,7 @@ function TopBar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            KOkon.live
+            KOkon.app
           </a>
           <div className="itemContainer">
             <Person className="icon" />
