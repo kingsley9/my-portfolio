@@ -107,11 +107,11 @@ function Works() {
             height: 150,
           }}
         >
-          <CardActionArea href="#intro">
+          <CardActionArea href="https://github.com/kingsley9/my-portfolio">
             <CardContent sx={{ height: 150 }}>
               <span className="tag reactJs">React</span>
               <span className="tag cs"> SCSS </span>
-              <span className="tag firebase"> Firebase </span>
+              <span className="tag firebase"> Node.js </span>
 
               <Typography
                 gutterBottom
