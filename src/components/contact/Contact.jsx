@@ -1,21 +1,25 @@
-import {
-  Button,
-  Box,
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-  CardActionArea,
-} from "@mui/material";
+import { Typography } from "@mui/material";
 import { useState } from "react";
 import "./contact.scss";
 function Contact() {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const msg = { email, message };
-    console.log(msg);
+    try {
+      const msg = { email, message };
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(msg),
+      });
+      console.log(response);
+      setMessage("");
+      setEmail("");
+      alert("Thanks I'll get back to you ASAP!");
+    } catch (err) {
+      console.error(err.message);
+    }
   };
   return (
     <div className="contact" id="contact">
