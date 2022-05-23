@@ -1,7 +1,7 @@
 import { Card, CardContent, Typography, CardActionArea } from "@mui/material";
 
 import "./works.scss";
-
+import { auth, db } from "../../util/firebase";
 function Works() {
   return (
     <div className="works" id="works">
@@ -32,20 +32,21 @@ function Works() {
               <span className="tag java">Java</span>
               <span className="tag swing"> Java Swing </span>
               <Typography
-                gutterBottom
                 fontFamily={"Montserrat"}
                 align="left"
                 variant="body1"
                 component="div"
+                className="header"
                 paddingTop={1}
               >
                 Express Parking
               </Typography>
-              <hr />
+              <hr className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
+                className="description"
               >
                 Designed and developed a parking booking and management
                 application in Java.
@@ -74,18 +75,20 @@ function Works() {
                 align="left"
                 variant="body1"
                 component="div"
+                className="header"
                 paddingTop={1}
               >
                 TAB2XML
               </Typography>
-              <hr />
+              <hr className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
+                className="description"
               >
-                TAB2XML is Java based tool that enables users to play and view
-                music from musical tablature as well as convert it to MusicXML.
+                Contributed to TAB2XML which is a Java based tool that enables
+                users to play and view music from musical tablature.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -104,7 +107,7 @@ function Works() {
             <CardContent sx={{ height: 150 }}>
               <span className="tag reactJs">React</span>
               <span className="tag cs"> SCSS </span>
-              <span className="tag firebase"> Node.js </span>
+              <span className="tag firebase"> Firebase </span>
 
               <Typography
                 gutterBottom
@@ -112,18 +115,20 @@ function Works() {
                 align="left"
                 variant="body1"
                 component="div"
+                className="header"
                 paddingTop={1}
               >
                 KOkon.app
               </Typography>
-              <hr />
+              <hr className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
+                className="description"
               >
-                To practice my React skills I used ReactJS and Material UI to
-                build my entire portfolio website.
+                To practice my React skills I used it with scss and Material UI
+                to build my entire portfolio website.
               </Typography>
               <br />
             </CardContent>
@@ -148,17 +153,19 @@ function Works() {
                 fontFamily={"Montserrat"}
                 align="left"
                 variant="body1"
+                className="header"
                 component="div"
                 paddingTop={1}
                 paddingBottom={0}
               >
                 NLP For Software Engineering
               </Typography>
-              <hr />
+              <hr className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
+                className="description"
               >
                 A Jupyter project which uses natural language processing to
                 analyze app reviews in order to generate bug reports.
