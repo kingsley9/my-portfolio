@@ -2,9 +2,8 @@ import React from "react";
 import "./intro.scss";
 import { KeyboardArrowDown } from "@material-ui/icons";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { init } from "ityped";
+
 import Typewriter from "typewriter-effect";
-import { useEffect, useRef } from "react";
 
 function Intro() {
   return (

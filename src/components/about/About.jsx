@@ -1,9 +1,9 @@
 import "./about.scss";
 import {
-  Button,
-  Box,
+ 
+
   Card,
-  CardActions,
+
   CardContent,
   Typography,
 } from "@mui/material";

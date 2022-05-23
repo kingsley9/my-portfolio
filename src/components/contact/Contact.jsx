@@ -8,12 +8,14 @@ function Contact() {
     e.preventDefault();
     try {
       const msg = { email, message };
-      const response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(msg),
-      });
-      console.log(response);
+      // Send post request to firebase and store msg in database
+
+      // const response = await fetch("http://localhost:3000/contact", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(msg),
+      // });
+      // console.log(response);
       setMessage("");
       setEmail("");
       alert("Thanks I'll get back to you ASAP!");

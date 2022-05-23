@@ -2,9 +2,17 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+const path = require("path");
 // middleware
 app.use(cors());
 app.use(express.json());
+
+// get index page
+app.use(express.static(path.join(__dirname, "build")));
+
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 // ROUTES
 // Create a message
 app.post("/contact", async (req, res) => {
@@ -40,6 +48,4 @@ app.get("/contact/:id", async (req, res) => {
     console.error(err.message);
   }
 });
-app.listen(5000, () => {
-  console.log("server started on port 5000");
-});
+app.listen(3000, () => {});

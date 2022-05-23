@@ -1,14 +1,7 @@
-import {
-  Button,
-  Box,
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-  CardActionArea,
-} from "@mui/material";
+import { Card, CardContent, Typography, CardActionArea } from "@mui/material";
 
 import "./works.scss";
+
 function Works() {
   return (
     <div className="works" id="works">
