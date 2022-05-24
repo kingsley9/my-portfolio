@@ -12,7 +12,7 @@ function Contact() {
     try {
       const msg = { email, message };
       // Send message to my email
-      
+
       emailjs.init("XaePIeTAi7kCXXA9V");
       emailjs.send("service_e0h05iv", "template_u388ojk", msg);
       setMessage("");
@@ -50,7 +50,6 @@ function Contact() {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <button type="submit">Send</button>
-          {/* {<span>Thanks I'll reply ASAP!</span>} */}
         </form>
       </div>
     </div>
