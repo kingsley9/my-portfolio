@@ -1,7 +1,7 @@
 import { Card, CardContent, Typography, CardActionArea } from "@mui/material";
 
 import "./works.scss";
-import { auth, db } from "../../util/firebase";
+
 function Works() {
   return (
     <div className="works" id="works">
