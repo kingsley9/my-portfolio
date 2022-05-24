@@ -1,21 +1,20 @@
 import { Typography } from "@mui/material";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./contact.scss";
+
+import emailjs from "emailjs-com";
 function Contact() {
+  const form = useRef();
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const msg = { email, message };
-      // Send post request to firebase and store msg in database
-
-      // const response = await fetch("http://localhost:3000/contact", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(msg),
-      // });
-      // console.log(response);
+      // Send message to my email
+      
+      emailjs.init("XaePIeTAi7kCXXA9V");
+      emailjs.send("service_e0h05iv", "template_u388ojk", msg);
       setMessage("");
       setEmail("");
       alert("Thanks I'll get back to you ASAP!");
@@ -23,6 +22,7 @@ function Contact() {
       console.error(err.message);
     }
   };
+
   return (
     <div className="contact" id="contact">
       <div className="wrapper">
@@ -35,7 +35,7 @@ function Contact() {
         >
           Contact Me
         </Typography>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <input
             type="text"
             required
