@@ -7,6 +7,8 @@
       "**/node_modules/**"
     ],
     "rewrites": [
+      {"source": "static/**",
+      "destination":"static/**"},
       {
         "source": "**",
         "destination": "/index.html"
