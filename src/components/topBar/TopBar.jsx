@@ -6,7 +6,7 @@ function TopBar({ menuOpen, setMenuOpen }) {
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
+          <a href="https://www.kokon.app" className="logo">
             KOkon.app
           </a>
           <div className="itemContainer">
