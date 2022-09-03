@@ -45,9 +45,7 @@ function Intro() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/kingsley9/my-portfolio/blob/master/public/assets/Kingsley_Okon_Resume.pdf">
-                RESUME
-              </a>
+              <a href="../assets/Kingsley_Okon_resume.pdf">RESUME</a>
             </li>
           </ul>
         </div>
