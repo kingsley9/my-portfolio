@@ -76,11 +76,17 @@
         }
       }
       .divider {
+        width: 100%;
+        border-color: #000;
+        border-width: 1px;
+        height: 1px;
+        background-color: #a1a1aa;
+        opacity: 0.3;
+        margin: 10px 00px;
         @include mobile {
           display: none;
         }
       }
-
       @include mobile {
         width: 90%;
         margin: 5px 10px;

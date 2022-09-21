@@ -21,7 +21,7 @@ function Works() {
         <Card
           className="card"
           variant="elevation"
-          elevation={4}
+          elevation={2}
           sx={{
             width: 380,
             height: 150,
@@ -41,7 +41,7 @@ function Works() {
               >
                 Express Parking
               </Typography>
-              <hr className="divider" />
+              <div className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
@@ -59,7 +59,7 @@ function Works() {
         <Card
           className="card"
           variant="elevation"
-          elevation={4}
+          elevation={2}
           sx={{
             width: 395,
             height: 150,
@@ -80,7 +80,7 @@ function Works() {
               >
                 TAB2XML
               </Typography>
-              <hr className="divider" />
+              <div className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
@@ -97,7 +97,7 @@ function Works() {
         <Card
           className="card"
           variant="elevation"
-          elevation={4}
+          elevation={2}
           sx={{
             width: 395,
             height: 150,
@@ -120,15 +120,14 @@ function Works() {
               >
                 KOkon.app
               </Typography>
-              <hr className="divider" />
+              <div className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
                 className="description"
               >
-                To practice my React skills I used it with scss and Material UI
-                to build my entire portfolio website.
+                Built my portfolio website using React and SCSS
               </Typography>
               <br />
             </CardContent>
@@ -138,14 +137,14 @@ function Works() {
         <Card
           className="card"
           variant="elevation"
-          elevation={4}
+          elevation={2}
           sx={{
             width: 395,
             height: 150,
           }}
         >
           <CardActionArea href="https://github.com/kingsley9/NLP-reviews-python">
-            <CardContent>
+            <CardContent sx={{ height: 150 }}>
               <span className="tag python">Python</span>
               <span className="tag jupyter"> Jupyter Notebook </span>
               <Typography
@@ -156,19 +155,18 @@ function Works() {
                 className="header"
                 component="div"
                 paddingTop={1}
-                paddingBottom={0}
               >
                 NLP For Software Engineering
               </Typography>
-              <hr className="divider" />
+              <div className="divider" />
               <Typography
                 fontFamily={"Montserrat"}
                 variant="caption"
                 color="text.secondary"
                 className="description"
               >
-                A Jupyter project which uses natural language processing to
-                analyze app reviews in order to generate bug reports.
+                Created a Jupyter notebook project which generates requirements
+                for apps using natural language processing on the apps reviews.
               </Typography>
             </CardContent>
           </CardActionArea>
