@@ -13,9 +13,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={() => setMenuOpen(false)}>
           <a href="#works">Projects</a>
         </li>
-        {/* <li onClick={()=>setMenuOpen(false)}>
-          <a href="#experience">Experience</a>
-        </li> */}
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#skills">Skills</a>
+        </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>
