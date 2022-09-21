@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.skills {
+  background-color: $secColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .skills-box {
+    width: 25%;
+    height: 90%;
+    @include mobile {
+      width: 100%;
+      height: 80%;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      width: 60%;
+      height: 100%;
+      justify-content: space-between;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      width: 40%;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import Works from "./components/works/Works";
 import Menu from "./components/menu/Menu";
 import Contact from "./components/contact/Contact";
+import Skills from "./components/skills/Skills";
 import "./app.scss";
 import { useState } from "react";
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Intro />
         <About />
         <Works />
+        <Skills />
         <Contact />
       </div>
     </div>
@@ -24,5 +26,3 @@ function App() {
 }
 
 export default App;
-
-

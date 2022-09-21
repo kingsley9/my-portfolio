@@ -1,12 +1,5 @@
 import "./about.scss";
-import {
- 
-
-  Card,
-
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 
 function About() {
   return (
@@ -55,10 +48,10 @@ function About() {
             creative problem solving skills which have in turn shaped me into
             the Engineer I am today. My parents were very instrumental in me
             choosing the Software engineering program and have been a great
-            source of inspiration for me throughout my life. They enrolled me in
-            a coding camp when I was younger where I was first introduced to
-            HTML and css. I was able to gain an early inclination towards
-            programming which has followed me to this day.
+            source of inspiration for me throughout my life. They got me into a
+            coding camp when I was younger where I was first introduced to HTML
+            and css. I was able to gain an early inclination towards programming
+            which has followed me to this day.
           </Typography>
         </CardContent>
       </Card>
