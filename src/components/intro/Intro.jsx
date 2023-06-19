@@ -1,9 +1,9 @@
-import React from "react";
-import "./intro.scss";
-import { KeyboardArrowDown } from "@material-ui/icons";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import React from 'react';
+import './intro.scss';
+import { KeyboardArrowDown } from '@material-ui/icons';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
-import Typewriter from "typewriter-effect";
+import Typewriter from 'typewriter-effect';
 
 function Intro() {
   return (
@@ -23,7 +23,7 @@ function Intro() {
             <h3>
               <Typewriter
                 options={{
-                  strings: ["Engineer", "Developer", "Designer"],
+                  strings: ['Engineer', 'Developer', 'Designer'],
                   autoStart: true,
                   delay: 75,
                   loop: true,
