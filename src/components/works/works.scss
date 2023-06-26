@@ -1,12 +1,10 @@
-@import "../../global.scss";
+@import '../../global.scss';
 .works {
   background-color: $secColor;
-
-  height: 300px;
+  padding: 50px 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
   .java {
     background-color: #fff9c4;
   }
@@ -23,7 +21,7 @@
     background-color: #c5cae9;
   }
   .python {
-    background-color: #b9f6ca;
+    background-color: #67e8f9;
   }
   .firebase {
     background-color: #ffecb3;
@@ -31,25 +29,27 @@
   .jupyter {
     background-color: #ffe0b2;
   }
+  .javascript {
+    background-color: #facc15;
+  }
 
   .cardContainer {
     align-self: center;
-
-    width: 950px;
-    height: 88%;
+    margin: 0px auto;
+    height: 65%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-around;
-
-    margin-left: 50px;
+    justify-content: center;
     @include mobile {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin-left: 0px;
-      width: 90%;
-      height: 95%;
+      height: 80%;
+    }
+    .bottom-row,
+    .top-row {
+      display: flex;
+      @include mobile {
+        display: block;
+      }
     }
     .card {
       .tag {

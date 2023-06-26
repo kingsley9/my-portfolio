@@ -1,6 +1,7 @@
-import { Card, CardContent, Typography, CardActionArea } from "@mui/material";
+import React from 'react';
+import { Card, CardContent, Typography, CardActionArea } from '@mui/material';
 
-import "./works.scss";
+import './works.scss';
 
 function Works() {
   return (
@@ -9,168 +10,248 @@ function Works() {
 
       <Typography
         gutterBottom
-        fontFamily={"Montserrat"}
+        fontFamily={'Montserrat'}
         align="center"
-        variant="h4"
+        variant="h3"
         component="div"
+        fontWeight={'bold'}
       >
         Projects
       </Typography>
+
       <div className="cardContainer">
-        {/* Express Parking */}
-        <Card
-          className="card"
-          variant="elevation"
-          elevation={2}
-          sx={{
-            width: 380,
-            height: 150,
-          }}
-        >
-          <CardActionArea href="https://github.com/kingsley9/EECS3311F-proj">
-            <CardContent sx={{ height: 150 }}>
-              <span className="tag java">Java</span>
-              <span className="tag swing"> Java Swing </span>
-              <Typography
-                fontFamily={"Montserrat"}
-                align="left"
-                variant="body1"
-                component="div"
-                className="header"
-                paddingTop={1}
-              >
-                Express Parking
-              </Typography>
-              <div className="divider" />
-              <Typography
-                fontFamily={"Montserrat"}
-                variant="caption"
-                color="text.secondary"
-                className="description"
-              >
-                Designed and developed a parking booking and management
-                application in Java.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+        <div className="top-row">
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 380,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/kingsley9/cell-order-predictor">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag reactJs">React</span>
+                <span className="tag python"> Python </span>
+                <span className="tag python"> Flask </span>
+                <Typography
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  NotePredict (Capstone)
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Developed NotePredict, a web app that optimizes Jupyter
+                  notebook organization using deep learning.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 380,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/kingsley9/EECS4481-Project-T5">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag reactJs">React</span>
+                <span className="tag reactJs">Typescript</span>
+                <span className="tag javascript"> Express.js </span>
+                <Typography
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  Help desk app (Security capstone)
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Developed a secure help desk app and performed rigorous
+                  security and performance testing on it.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          {/* Express Parking */}
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 380,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/kingsley9/EECS3311F-proj">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag java">Java</span>
+                <span className="tag swing"> Java Swing </span>
+                <Typography
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  Express Parking
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Designed and developed a parking booking and management
+                  application in Java.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </div>
+        <div className="bottom-row">
+          {/* TAB2XML */}
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 395,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/devivekw/TAB2XML">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag java">Java</span>
+                <span className="tag javaFx"> JavaFX </span>
+                <Typography
+                  gutterBottom
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  TAB2XML
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Contributed to TAB2XML which is a Java based tool that enables
+                  users to play and view music from musical tablature.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          {/* KOkon.app */}
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 395,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/kingsley9/my-portfolio">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag reactJs">React</span>
+                <span className="tag cs"> SCSS </span>
+                <span className="tag firebase"> Firebase </span>
 
-        {/* TAB2XML */}
-        <Card
-          className="card"
-          variant="elevation"
-          elevation={2}
-          sx={{
-            width: 395,
-            height: 150,
-          }}
-        >
-          <CardActionArea href="https://github.com/devivekw/TAB2XML">
-            <CardContent sx={{ height: 150 }}>
-              <span className="tag java">Java</span>
-              <span className="tag javaFx"> JavaFX </span>
-              <Typography
-                gutterBottom
-                fontFamily={"Montserrat"}
-                align="left"
-                variant="body1"
-                component="div"
-                className="header"
-                paddingTop={1}
-              >
-                TAB2XML
-              </Typography>
-              <div className="divider" />
-              <Typography
-                fontFamily={"Montserrat"}
-                variant="caption"
-                color="text.secondary"
-                className="description"
-              >
-                Contributed to TAB2XML which is a Java based tool that enables
-                users to play and view music from musical tablature.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        {/* KOkon.app */}
-        <Card
-          className="card"
-          variant="elevation"
-          elevation={2}
-          sx={{
-            width: 395,
-            height: 150,
-          }}
-        >
-          <CardActionArea href="https://github.com/kingsley9/my-portfolio">
-            <CardContent sx={{ height: 150 }}>
-              <span className="tag reactJs">React</span>
-              <span className="tag cs"> SCSS </span>
-              <span className="tag firebase"> Firebase </span>
-
-              <Typography
-                gutterBottom
-                fontFamily={"Montserrat"}
-                align="left"
-                variant="body1"
-                component="div"
-                className="header"
-                paddingTop={1}
-              >
-                KOkon.app
-              </Typography>
-              <div className="divider" />
-              <Typography
-                fontFamily={"Montserrat"}
-                variant="caption"
-                color="text.secondary"
-                className="description"
-              >
-                Built my portfolio website using React and SCSS
-              </Typography>
-              <br />
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        {/* NLP Project */}
-        <Card
-          className="card"
-          variant="elevation"
-          elevation={2}
-          sx={{
-            width: 395,
-            height: 150,
-          }}
-        >
-          <CardActionArea href="https://github.com/kingsley9/NLP-reviews-python">
-            <CardContent sx={{ height: 150 }}>
-              <span className="tag python">Python</span>
-              <span className="tag jupyter"> Jupyter Notebook </span>
-              <Typography
-                gutterBottom
-                fontFamily={"Montserrat"}
-                align="left"
-                variant="body1"
-                className="header"
-                component="div"
-                paddingTop={1}
-              >
-                NLP For Software Engineering
-              </Typography>
-              <div className="divider" />
-              <Typography
-                fontFamily={"Montserrat"}
-                variant="caption"
-                color="text.secondary"
-                className="description"
-              >
-                Created a Jupyter notebook project which generates requirements
-                for apps using natural language processing on the apps reviews.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+                <Typography
+                  gutterBottom
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  KOkon.app
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Built my web portfolio using React and SCSS
+                </Typography>
+                <br />
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          {/* NLP Project */}
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 395,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://github.com/kingsley9/NLP-reviews-python">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag python">Python</span>
+                <span className="tag jupyter"> Jupyter Notebook </span>
+                <Typography
+                  gutterBottom
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  className="header"
+                  component="div"
+                  paddingTop={1}
+                >
+                  NLP For Software Engineering
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Created a Jupyter notebook project which generates
+                  requirements for apps using natural language processing on the
+                  apps reviews.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </div>
       </div>
     </div>
   );
