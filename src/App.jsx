@@ -1,12 +1,13 @@
-import TopBar from "./components/topBar/TopBar";
-import Intro from "./components/intro/Intro";
-import About from "./components/about/About";
-import Works from "./components/works/Works";
-import Menu from "./components/menu/Menu";
-import Contact from "./components/contact/Contact";
-import Skills from "./components/skills/Skills";
-import "./app.scss";
-import { useState } from "react";
+import React from 'react';
+import TopBar from './components/topBar/TopBar';
+import Intro from './components/intro/Intro';
+import About from './components/about/About';
+import Works from './components/works/Works';
+import Menu from './components/menu/Menu';
+import Contact from './components/contact/Contact';
+import Skills from './components/skills/Skills';
+import './app.scss';
+import { useState } from 'react';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -16,7 +17,7 @@ function App() {
 
       <div className="sections">
         <Intro />
-        <About />
+        {/* <About /> */}
         <Works />
         <Skills />
         <Contact />

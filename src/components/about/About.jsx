@@ -1,15 +1,17 @@
-import "./about.scss";
-import { Card, CardContent, Typography } from "@mui/material";
+import React from 'react';
+import './about.scss';
+import { Card, CardContent, Typography } from '@mui/material';
 
 function About() {
   return (
     <div className="about" id="about">
       <Typography
-        fontFamily={"Montserrat"}
+        gutterBottom
+        fontFamily={'Montserrat'}
         align="center"
-        variant="h4"
+        variant="h3"
         component="div"
-        className="header"
+        fontWeight={'bold'}
       >
         About Me
       </Typography>
@@ -17,12 +19,12 @@ function About() {
         className="card"
         variant="elevation"
         elevation={3}
-        sx={{ width: 700, height: 500, borderRadius: "1rem" }}
+        sx={{ width: 700, height: 500, borderRadius: '1rem' }}
       >
         <CardContent>
           <hr />
           <Typography
-            fontFamily={"Montserrat"}
+            fontFamily={'Montserrat'}
             variant="body1"
             padding={2}
             color="text.secondary"
@@ -38,7 +40,7 @@ function About() {
           <br />
 
           <Typography
-            fontFamily={"Montserrat"}
+            fontFamily={'Montserrat'}
             variant="body1"
             paddingX={2}
             color="text.secondary"
