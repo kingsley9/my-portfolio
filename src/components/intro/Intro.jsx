@@ -32,6 +32,11 @@ function Intro() {
             component="div"
             fontWeight={'bold'}
             style={{ overflow: 'hidden' }}
+            sx={{
+              fontSize: {
+                xs: '35px', // Set the font size for mobile screens
+              },
+            }}
           >
             Kingsley Okon
           </Typography>
@@ -44,6 +49,11 @@ function Intro() {
               component="div"
               fontWeight={'bold'}
               className="soft"
+              sx={{
+                fontSize: {
+                  xs: '20px', // Set the font size for mobile screens
+                },
+              }}
             >
               A software
             </Typography>
@@ -53,6 +63,11 @@ function Intro() {
               variant="h4"
               component="div"
               fontWeight={'bold'}
+              sx={{
+                fontSize: {
+                  xs: '20px', // Set the font size for mobile screens
+                },
+              }}
             >
               <Typewriter
                 options={{
