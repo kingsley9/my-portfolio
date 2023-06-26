@@ -1,13 +1,13 @@
-import React from "react";
-import "./topBar.scss";
-import { Person, Mail } from "@material-ui/icons";
+import React from 'react';
+import './topBar.scss';
+import { Person, Mail } from '@material-ui/icons';
 function TopBar({ menuOpen, setMenuOpen }) {
   return (
-    <div className={"topbar " + (menuOpen && "active")}>
+    <div className={'topbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
           <a href="https://www.kokon.app" className="logo">
-            KOkon.app
+            KOkon<span style={{ color: 'brown' }}>.app</span>
           </a>
           <div className="itemContainer">
             <Person className="icon" />
