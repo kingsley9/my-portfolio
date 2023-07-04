@@ -30,23 +30,23 @@ function Skills() {
         <Pll alt="Python Logo" height={100} language="ruby" />
         <i
           style={{ fontSize: 100 }}
-          class="devicon-nodejs-plain-wordmark colored"
+          className="devicon-nodejs-plain-wordmark colored"
         ></i>
         <i
           style={{ fontSize: 100 }}
-          class="devicon-react-original-wordmark colored"
+          className="devicon-react-original-wordmark colored"
         ></i>
         <i
           style={{ fontSize: 100 }}
-          class="devicon-git-plain-wordmark colored"
+          className="devicon-git-plain-wordmark colored"
         ></i>
         <i
           style={{ fontSize: 100 }}
-          class="devicon-mysql-plain-wordmark colored"
+          className="devicon-mysql-plain-wordmark colored"
         ></i>
         <i
           style={{ fontSize: 100 }}
-          class="devicon-tailwindcss-original-wordmark colored"
+          className="devicon-tailwindcss-original-wordmark colored"
         ></i>
       </div>
     </div>

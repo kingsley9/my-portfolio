@@ -32,11 +32,6 @@ function Intro() {
             component="div"
             fontWeight={'bold'}
             style={{ overflow: 'hidden' }}
-            sx={{
-              fontSize: {
-                xs: '35px', // Set the font size for mobile screens
-              },
-            }}
           >
             Kingsley Okon
           </Typography>
@@ -45,33 +40,23 @@ function Intro() {
             <Typography
               gutterBottom
               fontFamily={'Montserrat'}
-              variant="h4"
+              variant="h5"
               component="div"
               fontWeight={'bold'}
               className="soft"
-              sx={{
-                fontSize: {
-                  xs: '20px', // Set the font size for mobile screens
-                },
-              }}
             >
-              A software
+              A Software
             </Typography>
             <Typography
               gutterBottom
               fontFamily={'Montserrat'}
-              variant="h4"
+              variant="h5"
               component="div"
               fontWeight={'bold'}
-              sx={{
-                fontSize: {
-                  xs: '20px', // Set the font size for mobile screens
-                },
-              }}
             >
               <Typewriter
                 options={{
-                  strings: ['engineer', 'developer', 'designer'],
+                  strings: ['Engineer.', 'Developer.', 'Designer.'],
                   autoStart: true,
                   delay: 75,
                   loop: true,
