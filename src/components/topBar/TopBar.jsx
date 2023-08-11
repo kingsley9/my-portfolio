@@ -18,7 +18,7 @@ function TopBar({ menuOpen, setMenuOpen }) {
               <span className="text">KingsleyOkon09@gmail.com</span>
             </a>
           </div>
-          <DarkModeToggle menuOpen={menuOpen} />
+          <DarkModeToggle menuOpen={menuOpen} className="dark-mode-toggle" />
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

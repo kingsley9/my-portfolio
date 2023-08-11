@@ -12,7 +12,7 @@
     scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
     @include mobile {
-      top: 10px;
+      top: 55px;
     }
     &::-webkit-scrollbar {
       display: none;
