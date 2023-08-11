@@ -17,8 +17,8 @@ function TopBar({ menuOpen, setMenuOpen }) {
               <Mail className="icon" />
               <span className="text">KingsleyOkon09@gmail.com</span>
             </a>
-            <DarkModeToggle menuOpen={menuOpen} />
           </div>
+          <DarkModeToggle menuOpen={menuOpen} />
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

@@ -31,12 +31,14 @@ const DarkModeToggle = ({ menuOpen }) => {
           <LightModeOutlinedIcon
             sx={{
               color: '#eeeeee',
+              fontSize: '25px',
             }}
           />
         ) : (
           <DarkModeOutlinedIcon
             sx={{
               color: menuOpen ? '#eeeeee' : 'inherit',
+              fontSize: '25px',
             }}
           />
         )}
