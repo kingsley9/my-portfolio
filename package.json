@@ -2,16 +2,14 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  
- 
-
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@mui/material": "^5.7.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.4",
     "@mui/private-theming": "^5.13.1",
     "@rushstack/eslint-patch": "^1.1.3",
     "@testing-library/jest-dom": "^5.16.4",
@@ -25,6 +23,7 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "react-pll": "^0.0.1",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "^5.0.1",
     "scroll-snap": "^4.0.3",
     "typewriter-effect": "^2.18.2",
@@ -34,7 +33,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -56,27 +56,27 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "@babel/preset-react": "^7.22.5",
-    "babel-loader": "^9.1.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
-
+    "babel-loader": "^9.1.2"
   },
   "resolutions": {
-      "@babel/core": "7.19.6",
-      "@babel/generator": "7.19.6",
-      "@babel/compat-data": "7.19.4",
-      "@babel/helper-compilation-targets": "7.19.3",
-      "@babel/helper-create-class-features-plugin": "7.19.0",
-      "@babel/helper-module-transforms": "7.19.6",
-      "babel-loader": "8.2.5"
-
-    },
-     "babel": {
+    "@babel/core": "7.19.6",
+    "@babel/generator": "7.19.6",
+    "@babel/compat-data": "7.19.4",
+    "@babel/helper-compilation-targets": "7.19.3",
+    "@babel/helper-create-class-features-plugin": "7.19.0",
+    "@babel/helper-module-transforms": "7.19.6",
+    "babel-loader": "8.2.5"
+  },
+  "babel": {
     "presets": [
-      ["@babel/preset-react", {
-        "option": "value"
-      }]
+      [
+        "@babel/preset-react",
+        {
+          "option": "value"
+        }
+      ]
     ]
   }
-
 }
