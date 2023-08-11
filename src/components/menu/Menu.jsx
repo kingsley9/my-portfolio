@@ -1,5 +1,6 @@
 import React from 'react';
 import './menu.scss';
+import { Link } from 'react-router-dom';
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
@@ -19,6 +20,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>
+        {/* <li onClick={() => setMenuOpen(false)}>
+          <Link to="/blog">My Blog</Link>
+        </li> */}
       </ul>
     </div>
   );
