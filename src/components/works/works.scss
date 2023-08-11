@@ -1,10 +1,10 @@
 @import '../../global.scss';
 .works {
-  background-color: $secColor;
   padding: 50px 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
   .java {
     background-color: #fff9c4;
   }
@@ -52,7 +52,11 @@
       }
     }
     .card {
+      color: inherit;
+
       .tag {
+        color: $background-color-dark;
+
         width: 100px;
         height: 20px;
         border-radius: 2rem;
@@ -71,6 +75,8 @@
         }
       }
       .description {
+        color: inherit;
+
         @include mobile {
           font-size: 10px;
         }
@@ -93,7 +99,8 @@
       }
       flex: 1 1 1;
       margin: 25px 30px;
-      background-color: #f5f5f5;
+      color: inherit;
+      background-color: inherit;
       border-radius: 0.5rem;
       padding-bottom: 1.1rem;
 
