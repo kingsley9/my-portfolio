@@ -21,6 +21,45 @@ function Works() {
 
       <div className="cardContainer">
         <div className="top-row">
+          {/* NLP Project */}
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 395,
+              height: 150,
+            }}
+          >
+            <CardActionArea href="https://blens.ca">
+              <CardContent sx={{ height: 150 }}>
+                <span className="tag ruby">Ruby on rails</span>
+                <span className="tag reactJs">React native</span>
+                <Typography
+                  gutterBottom
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  className="header"
+                  component="div"
+                  paddingTop={1}
+                >
+                  Blens
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Co-founded Blens, a startup that is empowering creatives with
+                  tools to monetize their work and connect with potential
+                  clients
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
           <Card
             className="card"
             variant="elevation"
@@ -30,7 +69,7 @@ function Works() {
               height: 150,
             }}
           >
-            <CardActionArea href="https://github.com/kingsley9/cell-order-predictor">
+            <CardActionArea href="https://cell-order-predictor-w3yw.vercel.app">
               <CardContent sx={{ height: 150 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag python"> Python </span>
@@ -43,7 +82,7 @@ function Works() {
                   className="header"
                   paddingTop={1}
                 >
-                  NotePredict (Capstone)
+                  NotePredict (Engineering Capstone)
                 </Typography>
                 <div className="divider" />
                 <Typography
@@ -67,7 +106,7 @@ function Works() {
               height: 150,
             }}
           >
-            <CardActionArea href="https://github.com/kingsley9/EECS4481-Project-T5">
+            <CardActionArea href="https://kingsley9.github.io/EECS4481-Project-T5/">
               <CardContent sx={{ height: 150 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag reactJs">Typescript</span>
@@ -89,45 +128,9 @@ function Works() {
                   color="text.secondary"
                   className="description"
                 >
-                  Developed a secure help desk app and performed rigorous
-                  security and performance testing on it.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          {/* Express Parking */}
-          <Card
-            className="card"
-            variant="elevation"
-            elevation={2}
-            sx={{
-              width: 380,
-              height: 150,
-            }}
-          >
-            <CardActionArea href="https://github.com/kingsley9/EECS3311F-proj">
-              <CardContent sx={{ height: 150 }}>
-                <span className="tag java">Java</span>
-                <span className="tag swing"> Java Swing </span>
-                <Typography
-                  fontFamily={'Montserrat'}
-                  align="left"
-                  variant="body1"
-                  component="div"
-                  className="header"
-                  paddingTop={1}
-                >
-                  Express Parking
-                </Typography>
-                <div className="divider" />
-                <Typography
-                  fontFamily={'Montserrat'}
-                  variant="caption"
-                  color="text.secondary"
-                  className="description"
-                >
-                  Designed and developed a parking booking and management
-                  application in Java.
+                  Developed a secure help desk app as part of my security
+                  capstone project and performed rigorous security and
+                  performance testing on it.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -212,30 +215,29 @@ function Works() {
               </CardContent>
             </CardActionArea>
           </Card>
-          {/* NLP Project */}
+          {/* Express Parking */}
           <Card
             className="card"
             variant="elevation"
             elevation={2}
             sx={{
-              width: 395,
+              width: 380,
               height: 150,
             }}
           >
-            <CardActionArea href="https://github.com/kingsley9/NLP-reviews-python">
+            <CardActionArea href="https://github.com/kingsley9/EECS3311F-proj">
               <CardContent sx={{ height: 150 }}>
-                <span className="tag python">Python</span>
-                <span className="tag jupyter"> Jupyter Notebook </span>
+                <span className="tag java">Java</span>
+                <span className="tag swing"> Java Swing </span>
                 <Typography
-                  gutterBottom
                   fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
-                  className="header"
                   component="div"
+                  className="header"
                   paddingTop={1}
                 >
-                  NLP For Software Engineering
+                  Express Parking
                 </Typography>
                 <div className="divider" />
                 <Typography
@@ -244,9 +246,8 @@ function Works() {
                   color="text.secondary"
                   className="description"
                 >
-                  Created a Jupyter notebook project which generates
-                  requirements for apps using natural language processing on the
-                  apps reviews.
+                  Designed and developed a parking booking and management
+                  application in Java.
                 </Typography>
               </CardContent>
             </CardActionArea>
