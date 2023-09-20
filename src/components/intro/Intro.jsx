@@ -81,7 +81,7 @@ function Intro() {
               </a>
             </li>
             <li>
-              <a href="../assets/Kingsley_Okon_Resume.pdf">RESUME</a>
+              <a href="/assets/Kingsley_Okon_Resume.pdf">RESUME</a>
             </li>
           </ul>
         </div>
