@@ -29,7 +29,7 @@ function Skills() {
         <Pll alt="Python Logo" height={100} language="cpp" />
         <Pll alt="Python Logo" height={100} language="ruby" />
         <i
-          style={{ fontSize: 100 }}
+          style={{ fontSize: 90 }}
           className="devicon-nodejs-plain-wordmark colored"
         ></i>
         <i

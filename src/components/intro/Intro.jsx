@@ -11,7 +11,7 @@ function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/main.png" alt="" />
+          <img src="assets/main.png" alt="my profile picture" />
         </div>
       </div>
       <div className="right">
@@ -81,7 +81,16 @@ function Intro() {
               </a>
             </li>
             <li>
-              <a href="/assets/Kingsley_Okon_Resume.pdf">RESUME</a>
+              <a
+                href="/assets/Kingsley_Okon_resume.pdf"
+                onClick={(event) => {
+                  event.preventDefault(); // Prevent the router from handling the click
+                  window.location.href =
+                    event.currentTarget.getAttribute('href'); // Directly navigate to the URL
+                }}
+              >
+                Resume
+              </a>
             </li>
           </ul>
         </div>

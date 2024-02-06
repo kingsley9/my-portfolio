@@ -5,7 +5,7 @@ import './works.scss';
 
 function Works() {
   return (
-    <div className="works" id="works">
+    <div className="works" id="projects">
       {/* Projects Container */}
 
       <Typography
@@ -28,11 +28,11 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 150,
+              height: 165,
             }}
           >
             <CardActionArea href="https://blens.ca">
-              <CardContent sx={{ height: 150 }}>
+              <CardContent sx={{ height: 165 }}>
                 <span className="tag ruby">Ruby on rails</span>
                 <span className="tag reactJs">React native</span>
                 <Typography
@@ -53,9 +53,10 @@ function Works() {
                   color="text.secondary"
                   className="description"
                 >
-                  Co-founded Blens, a startup that is empowering creatives with
-                  tools to monetize their work and connect with potential
-                  clients
+                  Building Blens, a startup providing photographers and
+                  videographers with a marketplace and CRM for integrating
+                  scheduling, booking, messaging, and customizable pages to
+                  enhance their online presence.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -66,11 +67,47 @@ function Works() {
             elevation={2}
             sx={{
               width: 380,
-              height: 150,
+              height: 165,
+            }}
+          >
+            <CardActionArea href="https://eecs-4413-auction-website.vercel.app/">
+              <CardContent sx={{ height: 165 }}>
+                <span className="tag java">Spring Boot</span>
+                <span className="tag reactJs"> Next.js </span>
+                <Typography
+                  fontFamily={'Montserrat'}
+                  align="left"
+                  variant="body1"
+                  component="div"
+                  className="header"
+                  paddingTop={1}
+                >
+                  AuctionZone - E-Commerce Auction System
+                </Typography>
+                <div className="divider" />
+                <Typography
+                  fontFamily={'Montserrat'}
+                  variant="caption"
+                  color="text.secondary"
+                  className="description"
+                >
+                  Built a microservice-based e-commerce auction platform,
+                  managing catalogues, auctions, user accounts, and payments.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          <Card
+            className="card"
+            variant="elevation"
+            elevation={2}
+            sx={{
+              width: 380,
+              height: 165,
             }}
           >
             <CardActionArea href="https://cell-order-predictor-w3yw.vercel.app">
-              <CardContent sx={{ height: 150 }}>
+              <CardContent sx={{ height: 165 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag python"> Python </span>
                 <span className="tag python"> Flask </span>
@@ -97,17 +134,19 @@ function Works() {
               </CardContent>
             </CardActionArea>
           </Card>
+        </div>
+        <div className="bottom-row">
           <Card
             className="card"
             variant="elevation"
             elevation={2}
             sx={{
               width: 380,
-              height: 150,
+              height: 165,
             }}
           >
             <CardActionArea href="https://kingsley9.github.io/EECS4481-Project-T5/">
-              <CardContent sx={{ height: 150 }}>
+              <CardContent sx={{ height: 165 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag reactJs">Typescript</span>
                 <span className="tag javascript"> Express.js </span>
@@ -119,7 +158,7 @@ function Works() {
                   className="header"
                   paddingTop={1}
                 >
-                  Help desk app (Security capstone)
+                  Help desk app (Cybersecurity capstone)
                 </Typography>
                 <div className="divider" />
                 <Typography
@@ -135,8 +174,6 @@ function Works() {
               </CardContent>
             </CardActionArea>
           </Card>
-        </div>
-        <div className="bottom-row">
           {/* TAB2XML */}
           <Card
             className="card"
@@ -144,11 +181,11 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 150,
+              height: 165,
             }}
           >
             <CardActionArea href="https://github.com/devivekw/TAB2XML">
-              <CardContent sx={{ height: 150 }}>
+              <CardContent sx={{ height: 165 }}>
                 <span className="tag java">Java</span>
                 <span className="tag javaFx"> JavaFX </span>
                 <Typography
@@ -169,8 +206,8 @@ function Works() {
                   color="text.secondary"
                   className="description"
                 >
-                  Contributed to TAB2XML which is a Java based tool that enables
-                  users to play and view music from musical tablature.
+                  Contributed to TAB2XML which is a Java based desktop app that
+                  enables users to play and view music from musical tablature.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -182,11 +219,11 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 150,
+              height: 165,
             }}
           >
             <CardActionArea href="https://github.com/kingsley9/my-portfolio">
-              <CardContent sx={{ height: 150 }}>
+              <CardContent sx={{ height: 165 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag cs"> SCSS </span>
                 <span className="tag firebase"> Firebase </span>
@@ -216,42 +253,6 @@ function Works() {
             </CardActionArea>
           </Card>
           {/* Express Parking */}
-          <Card
-            className="card"
-            variant="elevation"
-            elevation={2}
-            sx={{
-              width: 380,
-              height: 150,
-            }}
-          >
-            <CardActionArea href="https://github.com/kingsley9/EECS3311F-proj">
-              <CardContent sx={{ height: 150 }}>
-                <span className="tag java">Java</span>
-                <span className="tag swing"> Java Swing </span>
-                <Typography
-                  fontFamily={'Montserrat'}
-                  align="left"
-                  variant="body1"
-                  component="div"
-                  className="header"
-                  paddingTop={1}
-                >
-                  Express Parking
-                </Typography>
-                <div className="divider" />
-                <Typography
-                  fontFamily={'Montserrat'}
-                  variant="caption"
-                  color="text.secondary"
-                  className="description"
-                >
-                  Designed and developed a parking booking and management
-                  application in Java.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
         </div>
       </div>
     </div>

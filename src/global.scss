@@ -6,12 +6,15 @@ $complimentary-color-dark: #393b43;
 $complimentary-color-light: #feffff;
 
 body {
-  background-color: $background-color-light;
+  background-color: $secColor;
   color: $background-color-dark;
   .hamburger {
     span {
       background-color: $background-color-dark;
     }
+  }
+  .imgContainer {
+    background-color: $background-color-dark;
   }
 }
 a {
@@ -19,16 +22,21 @@ a {
 }
 body.dark-mode {
   background-color: $background-color-dark;
+
   color: $background-color-light;
   .hamburger {
     span {
       background-color: $background-color-light;
     }
   }
+  .imgContainer {
+    background-color: $secColor;
+  }
   .dark-button {
     color: $background-color-light;
   }
 }
+
 $width: 768px;
 @mixin mobile {
   @media (max-width: #{$width}) {

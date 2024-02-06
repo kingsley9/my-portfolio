@@ -11,11 +11,11 @@ import {
   ThemeProvider,
 } from '@mui/material/styles';
 import { useState } from 'react';
-
+import useScrollToAnchor from './hooks/useScrollToAnchor';
 export default function App() {
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-
+  useScrollToAnchor();
   return (
     <ThemeProvider theme={theme}>
       <Routes>
