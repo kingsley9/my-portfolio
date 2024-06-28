@@ -82,7 +82,7 @@ function Intro() {
             </li>
             <li>
               <a
-                href="/assets/Kingsley_Okon_resume.pdf"
+                href="/assets/Kingsley_Okon's_resume.pdf"
                 onClick={(event) => {
                   event.preventDefault(); // Prevent the router from handling the click
                   window.location.href =
