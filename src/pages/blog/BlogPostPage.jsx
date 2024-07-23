@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { db, doc, getDoc, updateDoc, increment } from '../../util/firebase';
+import { db, doc, getDoc } from '../../util/firebase';
 import BlogPost from '../../components/blog/BlogPost';
 import Container from '@mui/material/Container';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -57,11 +57,6 @@ const BlogPostPage = () => {
 
         const postData = { ...metadata, content, views };
         setPost(postData);
-
-        // Increment view count
-        await updateDoc(postDocRef, {
-          views: increment(1),
-        });
       } catch (error) {
         console.error('Error fetching post:', error);
       } finally {
