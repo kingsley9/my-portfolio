@@ -11,8 +11,8 @@ function TopBar({ menuOpen, setMenuOpen }) {
             KOkon<span style={{ color: 'brown' }}>.app</span>
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span className="text">+1 647 573 6412</span>
+            {/* <Person className="icon" />
+            <span className="text">+1 647 573 6412</span> */}
             <a href="mailto:kingsleyokon09@gmail.com" className="email">
               <Mail className="icon" />
               <span className="text">KingsleyOkon09@gmail.com</span>

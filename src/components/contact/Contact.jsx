@@ -30,7 +30,6 @@ function Contact() {
       <div className="wrapper">
         <Typography
           gutterBottom
-          fontFamily={'Montserrat'}
           align="center"
           variant="h3"
           component="div"

@@ -7,7 +7,6 @@ function About() {
     <div className="about" id="about">
       <Typography
         gutterBottom
-        fontFamily={'Montserrat'}
         align="center"
         variant="h3"
         component="div"
@@ -24,7 +23,6 @@ function About() {
         <CardContent>
           <hr />
           <Typography
-            fontFamily={'Montserrat'}
             variant="body1"
             padding={2}
             color="text.secondary"
@@ -40,7 +38,6 @@ function About() {
           <br />
 
           <Typography
-            fontFamily={'Montserrat'}
             variant="body1"
             paddingX={2}
             color="text.secondary"

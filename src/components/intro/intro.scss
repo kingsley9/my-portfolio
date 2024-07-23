@@ -41,7 +41,14 @@
   }
   .right {
     flex: 0.8;
+    display: flex;
+    flex-direction: column;
     overflow: clip;
+    align-items: start;
+    width: 70%;
+    @include mobile {
+      align-items: center;
+    }
     .wrapper {
       width: 100%;
       height: 70%;
@@ -71,8 +78,10 @@
           margin-right: 5px;
         }
         display: flex;
-        width: 80%;
+        width: 90%;
+        border: '1px solid red';
         @include mobile {
+          width: 100%;
           margin: 0 auto;
           justify-content: center;
         }
@@ -95,19 +104,16 @@
 
         @include mobile {
           font-size: 15px;
+          padding: 0 20px;
         }
       }
     }
     .links {
       display: flex;
+      width: 60%;
 
       ul {
-        margin: 0;
-        padding: 10;
-        list-style: 10;
-        font-size: 30px;
         font-weight: 200;
-        width: 90%;
         @include mobile {
           font-size: 20px;
           // margin-right: 35px;

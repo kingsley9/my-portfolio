@@ -1,43 +1,81 @@
-$mainColor: #1d1d1a;
+$mainColor: #0a0a0a;
 $secColor: #eeeeee;
-$background-color-dark: #292a32;
+$background-color-dark: #111111;
 $background-color-light: #eeeeee;
-$complimentary-color-dark: #393b43;
+$complimentary-color-dark: #171717; // Fixed typo: removed extra #
 $complimentary-color-light: #feffff;
 
 body {
   background-color: $secColor;
   color: $background-color-dark;
+  font-family: 'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+
   .hamburger {
     span {
       background-color: $background-color-dark;
     }
   }
+
   .imgContainer {
     background-color: $background-color-dark;
   }
 }
+
 a {
   text-decoration: none;
 }
+
+.markdown {
+  li {
+    color: #7d7d7d; // Light gray for normal text
+
+    strong {
+      color: $background-color-dark; // Black for bold text in light mode
+    }
+  }
+
+  .dark-mode & {
+    li {
+      color: #7d7d7d; // Light gray for normal text in dark mode
+
+      strong {
+        color: $background-color-light; // White for bold text in dark mode
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 body.dark-mode {
   background-color: $background-color-dark;
-
   color: $background-color-light;
+
   .hamburger {
     span {
       background-color: $background-color-light;
     }
   }
+
   .imgContainer {
     background-color: $secColor;
   }
+
   .dark-button {
     color: $background-color-light;
+  }
+
+  .logo,
+  .itemContainer span,
+  .email,
+  .hamburger span {
+    color: $secColor;
   }
 }
 
 $width: 768px;
+
 @mixin mobile {
   @media (max-width: #{$width}) {
     @content;

@@ -9,7 +9,7 @@ function Skills() {
       {/* Skills container */}
       <Typography
         gutterBottom
-        fontFamily={'Montserrat'}
+        fontFamily={'Arial'}
         align="center"
         variant="h3"
         component="div"

@@ -12,20 +12,39 @@ import {
 } from '@mui/material/styles';
 import { useState } from 'react';
 import useScrollToAnchor from './hooks/useScrollToAnchor';
-export default function App() {
-  let theme = createTheme();
+import BlogPostPage from './pages/blog/BlogPostPage';
+import { useDarkMode, DarkModeProvider } from './contexts/DarkModeContext';
+
+function AppContent() {
+  const { darkMode } = useDarkMode();
+
+  let theme = createTheme({
+    typography: {
+      body1: {
+        fontWeight: 230,
+        fontSize: '1.5rem',
+      },
+      fontFamily: [
+        'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      ].join(','),
+    },
+
+    palette: {
+      mode: darkMode ? 'dark' : 'light',
+    },
+  });
   theme = responsiveFontSizes(theme);
+
   useScrollToAnchor();
+
+  console.log(darkMode, theme.palette.mode);
   return (
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blog" element={<Blog />} />
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
+          <Route path="post/:id" element={<BlogPostPage />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -33,20 +52,23 @@ export default function App() {
   );
 }
 
+const App = () => {
+  return (
+    <DarkModeProvider>
+      <AppContent />
+    </DarkModeProvider>
+  );
+};
+
+export default App;
+
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app">
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
       <Outlet />
     </div>
   );

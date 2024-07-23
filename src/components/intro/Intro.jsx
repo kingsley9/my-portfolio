@@ -18,18 +18,16 @@ function Intro() {
         <div className="wrapper">
           <Typography
             gutterBottom
-            fontFamily={'Montserrat'}
             variant="h5"
             component="div"
             fontWeight={'bold'}
           >
-            Hello, I'm
+            Hi, I'm
           </Typography>
           <Typography
             gutterBottom
-            fontFamily={'Montserrat'}
             variant="h3"
-            component="div"
+            component="h4"
             fontWeight={'bold'}
             style={{ overflow: 'hidden' }}
           >
@@ -39,9 +37,8 @@ function Intro() {
           <div className="role">
             <Typography
               gutterBottom
-              fontFamily={'Montserrat'}
-              variant="h5"
-              component="div"
+              variant="h3"
+              component="h4"
               fontWeight={'bold'}
               className="soft"
             >
@@ -49,9 +46,8 @@ function Intro() {
             </Typography>
             <Typography
               gutterBottom
-              fontFamily={'Montserrat'}
-              variant="h5"
-              component="div"
+              variant="h3"
+              component="h4"
               fontWeight={'bold'}
             >
               <Typewriter
@@ -65,7 +61,9 @@ function Intro() {
             </Typography>
           </div>
           <div className="about-me">
-            <p>Specializing in web development & design</p>
+            <Typography gutterBottom variant="h6" fontWeight={'light'}>
+              Specializing in web development & design
+            </Typography>
           </div>
         </div>
         <div className="links">
@@ -89,7 +87,9 @@ function Intro() {
                     event.currentTarget.getAttribute('href'); // Directly navigate to the URL
                 }}
               >
-                Resume
+                <Typography variant="h5" fontWeight={'light'}>
+                  Resume
+                </Typography>
               </a>
             </li>
           </ul>

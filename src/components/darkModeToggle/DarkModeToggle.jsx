@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import '../../global.scss';
 import Tooltip from '@material-ui/core/Tooltip';
+import { useDarkMode } from '../../contexts/DarkModeContext';
 
 const DarkModeToggle = ({ menuOpen }) => {
-  const [darkMode, setDarkMode] = useState(
-    JSON.parse(localStorage.getItem('DARK_MODE'))
-  );
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-
-    localStorage.setItem('DARK_MODE', darkMode);
-  }, [darkMode]);
+  const { darkMode, setDarkMode } = useDarkMode();
 
   const handleModeChange = () => {
     setDarkMode((prevMode) => !prevMode);

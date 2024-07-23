@@ -10,7 +10,6 @@ function Works() {
 
       <Typography
         gutterBottom
-        fontFamily={'Montserrat'}
         align="center"
         variant="h3"
         component="div"
@@ -37,7 +36,6 @@ function Works() {
                 <span className="tag reactJs">React native</span>
                 <Typography
                   gutterBottom
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   className="header"
@@ -48,10 +46,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Building Blens, a startup providing photographers and
                   videographers with a marketplace and CRM for integrating
@@ -75,7 +73,6 @@ function Works() {
                 <span className="tag java">Spring Boot</span>
                 <span className="tag reactJs"> Next.js </span>
                 <Typography
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   component="div"
@@ -86,10 +83,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Built a microservice-based e-commerce auction platform,
                   managing catalogues, auctions, user accounts, and payments.
@@ -112,7 +109,6 @@ function Works() {
                 <span className="tag python"> Python </span>
                 <span className="tag python"> Flask </span>
                 <Typography
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   component="div"
@@ -123,10 +119,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Developed NotePredict, a web app that optimizes Jupyter
                   notebook organization using deep learning.
@@ -151,7 +147,6 @@ function Works() {
                 <span className="tag reactJs">Typescript</span>
                 <span className="tag javascript"> Express.js </span>
                 <Typography
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   component="div"
@@ -162,10 +157,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Developed a secure help desk app as part of my security
                   capstone project and performed rigorous security and
@@ -190,10 +185,10 @@ function Works() {
                 <span className="tag javaFx"> JavaFX </span>
                 <Typography
                   gutterBottom
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   component="div"
+                  fontWeight={'light'}
                   className="header"
                   paddingTop={1}
                 >
@@ -201,10 +196,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Contributed to TAB2XML which is a Java based desktop app that
                   enables users to play and view music from musical tablature.
@@ -230,7 +225,6 @@ function Works() {
 
                 <Typography
                   gutterBottom
-                  fontFamily={'Montserrat'}
                   align="left"
                   variant="body1"
                   component="div"
@@ -241,10 +235,10 @@ function Works() {
                 </Typography>
                 <div className="divider" />
                 <Typography
-                  fontFamily={'Montserrat'}
                   variant="caption"
                   color="text.secondary"
                   className="description"
+                  fontWeight={'light'}
                 >
                   Built my web portfolio using React and SCSS
                 </Typography>
