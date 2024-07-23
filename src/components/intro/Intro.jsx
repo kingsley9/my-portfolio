@@ -87,7 +87,11 @@ function Intro() {
                     event.currentTarget.getAttribute('href'); // Directly navigate to the URL
                 }}
               >
-                <Typography variant="h5" fontWeight={'light'}>
+                <Typography
+                  variant="h5"
+                  fontWeight={'light'}
+                  sx={{ paddingY: { xs: 0, md: 2 } }}
+                >
                   Resume
                 </Typography>
               </a>
