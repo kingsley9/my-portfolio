@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   blogsContainer: {
     paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(10),
   },
   blogTitle: {
     fontWeight: 800,
