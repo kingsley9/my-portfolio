@@ -46,8 +46,11 @@
     overflow: clip;
     align-items: start;
     width: 70%;
+    font-size: large;
+
     @include mobile {
       align-items: center;
+      font-size: small;
     }
     .wrapper {
       width: 100%;
@@ -56,30 +59,31 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       @include mobile {
         padding-left: 0;
-        height: 80%;
+        height: 50%;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
       .about-me {
         width: 50%;
-        font-size: x-large;
+        font-size: large;
         font-weight: lighter;
         @include mobile {
-          width: 80%;
-          font-size: medium;
+          width: 50%;
+          font-size: x-small;
         }
       }
       .role {
         .soft {
           margin-right: 10px;
+          @include mobile {
+            margin-right: 5px;
+          }
         }
         display: flex;
         width: 90%;
-        border: '1px solid red';
         @include mobile {
           width: 100%;
           margin: 0 auto;
@@ -110,13 +114,16 @@
     }
     .links {
       display: flex;
-      width: 60%;
-      font-size: 45px;
+      width: 100%;
+      align-items: center;
 
+      font-size: 45px;
+      @include mobile {
+      }
       ul {
         font-weight: 200;
         @include mobile {
-          font-size: 20px;
+          font-size: 18px;
           // margin-right: 35px;
           margin: 0 auto;
           width: 80%;

@@ -21,15 +21,17 @@ function Intro() {
             variant="h5"
             component="div"
             fontWeight={'bold'}
+            sx={{ fontsize: { sm: 10 } }}
           >
             Hi, I'm
           </Typography>
           <Typography
             gutterBottom
-            variant="h3"
+            variant="h4"
             component="h4"
             fontWeight={'bold'}
             style={{ overflow: 'hidden' }}
+            sx={{ fontsize: { sm: 10 } }}
           >
             Kingsley Okon
           </Typography>
@@ -37,16 +39,16 @@ function Intro() {
           <div className="role">
             <Typography
               gutterBottom
-              variant="h3"
+              variant="h5"
               component="h4"
               fontWeight={'bold'}
               className="soft"
             >
-              A Software
+              A Software Engineer
             </Typography>
-            <Typography
+            {/* <Typography
               gutterBottom
-              variant="h3"
+              variant={{ sm: 'h4', md: 'h3' }}
               component="h4"
               fontWeight={'bold'}
             >
@@ -58,11 +60,16 @@ function Intro() {
                   loop: true,
                 }}
               />
-            </Typography>
+            </Typography> */}
           </div>
           <div className="about-me">
-            <Typography gutterBottom variant="h6" fontWeight={'light'}>
-              Specializing in web development & design
+            <Typography
+              gutterBottom
+              variant={{}}
+              fontWeight={'light'}
+              component="div"
+            >
+              Specializing in web development & cybersecurity
             </Typography>
           </div>
         </div>
@@ -88,7 +95,7 @@ function Intro() {
                 }}
               >
                 <Typography
-                  variant="h5"
+                  variant="h6"
                   fontWeight={'light'}
                   sx={{ paddingY: { xs: 0, md: 2 } }}
                 >

@@ -7,7 +7,7 @@ const components = {
   h1: ({ children }) => (
     <Typography
       gutterBottom
-      variant="h1"
+      variant={{ sm: 'h2', md: 'h1' }}
       component="h1"
       mb={3}
       fontWeight={'bold'}
@@ -23,7 +23,7 @@ const components = {
     <Typography
       gutterBottom
       fontWeight={'bold'}
-      variant="h2"
+      variant={{ sm: 'h3', md: 'h2' }}
       component="h2"
       mb={3}
       style={{
@@ -38,7 +38,7 @@ const components = {
     <Typography
       gutterBottom
       fontWeight={'bold'}
-      variant="h3"
+      variant={{ sm: 'h4', md: 'h3' }}
       mb={3}
       component="h3"
       style={{
@@ -52,7 +52,7 @@ const components = {
   h4: ({ children }) => (
     <Typography
       gutterBottom
-      variant="h4"
+      variant={{ sm: 'h5', md: 'h4' }}
       mb={3}
       component="h4"
       style={{
