@@ -1,7 +1,7 @@
 .container {
   position: relative;
   top: 60px;
-  bottom: 60px;
+  padding-bottom: 80px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   scrollbar-width: none; //for firefox
