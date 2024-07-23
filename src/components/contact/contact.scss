@@ -44,6 +44,10 @@
         margin-top: 1rem;
         width: 150px;
         height: 30px;
+        .dark-mode & {
+          color: $mainColor;
+          background-color: $secColor;
+        }
         color: $secColor;
         background-color: $mainColor;
         border: none;
@@ -54,6 +58,10 @@
         &:hover {
           color: $mainColor;
           background-color: $secColor;
+          .dark-mode & {
+            color: $secColor;
+            background-color: $mainColor;
+          }
           border: solid 1px;
         }
       }

@@ -51,7 +51,17 @@ function Contact() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button type="submit">Send</button>
+          <button type="submit">
+            <Typography
+              gutterBottom
+              align="center"
+              variant="button"
+              component="div"
+              fontWeight={'bold'}
+            >
+              Send
+            </Typography>
+          </button>
         </form>
       </div>
     </div>

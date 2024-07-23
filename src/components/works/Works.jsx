@@ -31,7 +31,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://blens.ca">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 180 }}>
                 <span className="tag ruby">Ruby on rails</span>
                 <span className="tag reactJs">React native</span>
                 <Typography
@@ -69,7 +69,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://eecs-4413-auction-website.vercel.app/">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 190 }}>
                 <span className="tag java">Spring Boot</span>
                 <span className="tag reactJs"> Next.js </span>
                 <Typography
@@ -104,7 +104,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://cell-order-predictor-w3yw.vercel.app">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 190 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag python"> Python </span>
                 <span className="tag python"> Flask </span>
@@ -142,7 +142,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://kingsley9.github.io/EECS4481-Project-T5/">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 190 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag reactJs">Typescript</span>
                 <span className="tag javascript"> Express.js </span>
@@ -180,7 +180,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://github.com/devivekw/TAB2XML">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 190 }}>
                 <span className="tag java">Java</span>
                 <span className="tag javaFx"> JavaFX </span>
                 <Typography
@@ -218,7 +218,7 @@ function Works() {
             }}
           >
             <CardActionArea href="https://github.com/kingsley9/my-portfolio">
-              <CardContent sx={{ height: 165 }}>
+              <CardContent sx={{ height: 190 }}>
                 <span className="tag reactJs">React</span>
                 <span className="tag cs"> SCSS </span>
                 <span className="tag firebase"> Firebase </span>

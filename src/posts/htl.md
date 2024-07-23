@@ -106,5 +106,3 @@ Learning is a personal journey. By reflecting on past experiences, trying differ
 
 1. Pashler, H., McDaniel, M., Rohrer, D., & Bjork, R. (2008). Learning styles: Concepts and evidence. *Psychological Science in the Public Interest*, 9(3), 105-119. Retrieved from [Digital Commons @ USF](https://digitalcommons.usf.edu/psy_facpub/1765) and [APS](https://www.psychologicalscience.org/journals/psi/pspi_9_3.pdf)
 2. VARK Learn Limited. (n.d.). The VARK Modalities. Retrieved from [VARK](https://vark-learn.com/the-vark-modalities/)
-
-By sharing these insights and tips, I hope to inspire and guide you in your own learning journey. Happy learning!
