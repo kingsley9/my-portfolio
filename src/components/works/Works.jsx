@@ -27,7 +27,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 165,
+              height: 180,
             }}
           >
             <CardActionArea href="https://blens.ca">
@@ -65,7 +65,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 380,
-              height: 165,
+              height: 190,
             }}
           >
             <CardActionArea href="https://eecs-4413-auction-website.vercel.app/">
@@ -100,7 +100,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 380,
-              height: 165,
+              height: 190,
             }}
           >
             <CardActionArea href="https://cell-order-predictor-w3yw.vercel.app">
@@ -138,7 +138,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 380,
-              height: 165,
+              height: 190,
             }}
           >
             <CardActionArea href="https://kingsley9.github.io/EECS4481-Project-T5/">
@@ -176,7 +176,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 165,
+              height: 190,
             }}
           >
             <CardActionArea href="https://github.com/devivekw/TAB2XML">
@@ -214,7 +214,7 @@ function Works() {
             elevation={2}
             sx={{
               width: 395,
-              height: 165,
+              height: 190,
             }}
           >
             <CardActionArea href="https://github.com/kingsley9/my-portfolio">
